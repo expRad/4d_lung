@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+c:\dev\cgal-4.12-beta1\include\cgal\mpzf.h(74): warning C4163: '_BitScanForward64': not available as an intrinsic function
+c:\dev\cgal-4.12-beta1\include\cgal\mpzf.h(75): warning C4163: '_BitScanReverse64': not available as an intrinsic function
+c:\dev\cgal-4.12-beta1\include\cgal\mpzf.h(206): error C3861: '_BitScanForward64': identifier not found
+c:\dev\cgal-4.12-beta1\include\cgal\mpzf.h(218): error C3861: '_BitScanReverse64': identifier not found

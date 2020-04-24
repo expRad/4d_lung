@@ -1,0 +1,56 @@
+﻿cl : Command line warning D9025: overriding '/sdl' with '/GS-'
+  CGSense.cpp
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(174): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(174): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(194): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(194): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(207): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(229): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(244): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(323): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(323): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(352): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(353): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(354): warning C4305: 'return': truncation from 'double' to 'float'
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(355): warning C4305: 'return': truncation from 'double' to 'float'
+k:\jrichter\code_lung\cgsense\cgsense\cgsense.cpp(81): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+k:\jrichter\code_lung\cgsense\cgsense\functions.h(117): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  k:\jrichter\code_lung\cgsense\cgsense\functions.h(156): note: see reference to function template instantiation 'double get_area_of_dual_delaunay_edge<Kernel,Triangulation,CGAL::CartesianKernelFunctors::Construct_circumcenter_3<CGAL::Epick>>(const Triangulation &,const CGAL::Triple<CGAL::internal::CC_iterator<CGAL::Compact_container<CGAL::Triangulation_cell_base_3<GT,CGAL::Triangulation_ds_cell_base_3<TDS2>>,CGAL::Default,CGAL::Default,CGAL::Default>,false>,int,int> &,const CGAL::Point_3<Kernel_> &,const CGAL::Point_3<Kernel_> &,const Circumcenter &)' being compiled
+          with
+          [
+              Triangulation=Triangulation,
+              GT=K,
+              TDS2=CGAL::Triangulation_data_structure_3<CGAL::Triangulation_hierarchy_vertex_base_3<CGAL::Triangulation_vertex_base_3<K,CGAL::Triangulation_ds_vertex_base_3<void>>>,CGAL::Triangulation_cell_base_3<K,CGAL::Triangulation_ds_cell_base_3<void>>,CGAL::Sequential_tag>,
+              Kernel_=CGAL::Epick,
+              Circumcenter=CGAL::CartesianKernelFunctors::Construct_circumcenter_3<CGAL::Epick>
+          ]
+  k:\jrichter\code_lung\cgsense\cgsense\functions.h(207): note: see reference to function template instantiation 'double volume_of_finite_dual_cell<Triangulation>(const Triangulation &,const CGAL::internal::CC_iterator<CGAL::Compact_container<CGAL::Triangulation_hierarchy_vertex_base_3<CGAL::Triangulation_vertex_base_3<GT,CGAL::Triangulation_ds_vertex_base_3<TDS2>>>,CGAL::Default,CGAL::Default,CGAL::Default>,false> &)' being compiled
+          with
+          [
+              Triangulation=Triangulation,
+              GT=K,
+              TDS2=CGAL::Triangulation_data_structure_3<CGAL::Triangulation_hierarchy_vertex_base_3<CGAL::Triangulation_vertex_base_3<K,CGAL::Triangulation_ds_vertex_base_3<void>>>,CGAL::Triangulation_cell_base_3<K,CGAL::Triangulation_ds_cell_base_3<void>>,CGAL::Sequential_tag>
+          ]
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(54): note: see reference to class template instantiation 'boost::arg<9>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(53): note: see reference to class template instantiation 'boost::arg<8>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(52): note: see reference to class template instantiation 'boost::arg<7>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(51): note: see reference to class template instantiation 'boost::arg<6>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(50): note: see reference to class template instantiation 'boost::arg<5>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(49): note: see reference to class template instantiation 'boost::arg<4>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(48): note: see reference to class template instantiation 'boost::arg<3>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(47): note: see reference to class template instantiation 'boost::arg<2>' being compiled
+  c:\dev\boost_1_66_0\boost\bind\placeholders.hpp(46): note: see reference to class template instantiation 'boost::arg<1>' being compiled
+  c:\dev\boost_1_66_0\boost\math\constants\constants.hpp(265): note: see reference to class template instantiation 'boost::math::constants::detail::constant_half<T>' being compiled
+          with
+          [
+              T=double
+          ]
+  c:\dev\boost_1_66_0\boost\math\constants\constants.hpp(265): note: see reference to function template instantiation 'double boost::math::constants::half<T,boost::math::policies::policy<boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy,boost::math::policies::default_policy>>(void) noexcept' being compiled
+          with
+          [
+              T=double
+          ]
+  c:\dev\boost_1_66_0\boost\math\special_functions\detail\bernoulli_details.hpp(82): note: see reference to function template instantiation 'double boost::math::constants::half<double>(void) noexcept' being compiled
+  Generating code
+  Finished generating code
+  CGSense.vcxproj -> K:\jrichter\code_lung\CGSense\x64\Release\CGSense.exe
