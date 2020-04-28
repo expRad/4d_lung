@@ -1,1 +1,5 @@
-Edit
+C++ reconstruction code for the project "Free-Breathing Self-Gated 4D-Lung MRI using wave-CAIPI".
+The following libraries are required to build this project
+	- Boost	https://www.boost.org/
+	- FFTW3	http://www.fftw.org/
+	- CGAL	https://www.cgal.org/
