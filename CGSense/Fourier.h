@@ -38,13 +38,13 @@ public:
 	void setSizeZ(const int& z) { sizeZ = z; }
 	void setWisdomFileName(const std::string& s) { wisdomFileName = s; }
 
-	fftwf_plan planFWD;
-	fftwf_plan planBWD;
-
 private:
 	int sizeX;
 	int sizeY;
 	int sizeZ;
+
+	fftwf_plan planFWD;
+	fftwf_plan planBWD;
 
 	std::string wisdomFileName;
 

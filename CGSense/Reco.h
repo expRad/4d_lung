@@ -83,23 +83,14 @@ public:
 
 	std::vector<fftwf_complex*> sMaps;
 
-	std::string dataPath;
-	std::vector<std::string> batchFiles;
-
-	std::vector<float> denCorr;
-
-	std::string dataPathRoot;
-	std::string dataPathFileName;
-	std::string dataPathFileExtension;
-	std::vector<bool> emptyPoints;
+	std::vector<float> denCorr;	
 
 	std::vector<int> numPerformedCGIterations;
 	std::vector<double> cgResiduals;
 	std::vector<fftwf_complex*> img;
 	fftwf_complex* cgSenseImg;
 
-	std::vector<int> imgRange;
-	
+		
 
 	void check();
 	void init();
@@ -132,6 +123,7 @@ public:
 	void setFovZ(const double& d) { fovZ = d; }
 	void setCGThreshold(const double& x) { cgThreshold = x; }
 	void setBatch(const int& b) { batch = b; }
+	void setBatchFiles(const std::vector<std::string>& s) { batchFiles = s; }
 	void setDensityCorrection(const Density& d) { density = d; }
 	void setDensityCorrectionPath(const std::string& s) { densityCorrPath = s; }
 	void setOutputParentDir(const std::string& s) { outputParentDir = s; }
@@ -148,6 +140,9 @@ public:
 	int getOffcenterY() const { return offcenterY; }
 	int getOffcenterZ() const { return offcenterZ; }
 	int getBatch() const { return batch; }
+	int getBatchSize() const { return batchFiles.size(); }
+	std::string getBatchFileNum(const int& n) const { return batchFiles[n]; }
+	std::vector<std::string> getBatchFiles() { return batchFiles; }
 	double getFovY() const { return fovY; }
 	double getFovZ() const { return fovZ; }
 	double getCGThreshold() const { return cgThreshold; }
@@ -197,14 +192,22 @@ private:
 	int offcenterX;
 	int offcenterY;
 	int offcenterZ;
-
+	std::vector<int> imgRange;
 	int numThreads;
 	int numThreadsFFTW;
 
 	Density density;
 
 	std::string outputParentDir;
-	std::string densityCorrPath;
+	std::string densityCorrPath; 
+	
+	std::string dataPath;
+
+	std::vector<std::string> batchFiles;
+	std::string dataPathRoot;
+	std::string dataPathFileName;
+	std::string dataPathFileExtension;
+	std::vector<bool> emptyPoints;
 
 	friend class Trajectory;
 	friend class WaveCaipi;

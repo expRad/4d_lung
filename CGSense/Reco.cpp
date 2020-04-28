@@ -356,7 +356,7 @@ void Reco::check()
 			std::FILE* f = std::fopen(currentPath.c_str(), "rb");
 			if (f == NULL)
 			{
-				std::cout << "\nError: Could not open binary file " << currentPath << "\n";
+				std::cout << "\nError: Could not open binary data file " << currentPath << "\n";
 				exit(EXIT_FAILURE);
 			}
 			std::fclose(f);
@@ -395,6 +395,8 @@ void Reco::init()
 	}
 
 	imgRange = { gridSizeX, gridSizeY, gridSizeZ };
+
+	batch = batchFiles.size();
 }
 
 void Reco::finalize()
