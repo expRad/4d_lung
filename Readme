@@ -3,3 +3,4 @@ The following libraries are required to build this project
 	- Boost	https://www.boost.org/
 	- FFTW3	http://www.fftw.org/
 	- CGAL	https://www.cgal.org/
+An exemplary dataset can be downloaded from https://doi.org/10.5281/zenodo.3765168.
